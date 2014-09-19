@@ -2,7 +2,7 @@ var expect = require('chai').expect;
 var Country = require('../lib/country');
 
 describe('Country', function() {
-  it.skip('can access small cities', function() {
+  it('can access small cities', function() {
     var usa = new Country('USA');
     usa.addCity('Chicago', { population: 2.715 });
     usa.addCity('Portland', { population: 0.603 });
@@ -10,7 +10,7 @@ describe('Country', function() {
     usa.addCity('Baltimore', { population: 0.621 });
     usa.addCity('Savannah', { population: 0.142 });
     usa.addCity('Salt Lake City', { population: 0.189 });
-
+// city population is less then 0.5
     var cities = usa.findSmallCities();
     expect(cities).to.eql(['Savannah', 'Salt Lake City']);
   });
