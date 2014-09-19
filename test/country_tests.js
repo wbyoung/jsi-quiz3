@@ -28,7 +28,7 @@ describe('Country', function() {
     expect(cities).to.eql(['Portland', 'Baltimore']);
   });
 
-  it.skip('can access large cities', function() {
+  it('can access large cities', function() {
     var usa = new Country('USA');
     usa.addCity('Chicago', { population: 2.715 });
     usa.addCity('Portland', { population: 0.603 });
