@@ -1,6 +1,8 @@
 var expect = require('chai').expect;
 var City = require('../lib/city');
 
+// Everything in this file passes
+
 describe('City', function() {
   it('requires population to be created', function() {
     expect(function() { new City('Portland'); }).to.throw(/population is required/i);
