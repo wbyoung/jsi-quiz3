@@ -15,7 +15,7 @@ describe('Country', function() {
     expect(cities).to.eql(['Savannah', 'Salt Lake City']);
   });
 
-  it.skip('can access medium cities', function() {
+  it('can access medium cities', function() {
     var usa = new Country('USA');
     usa.addCity('Chicago', { population: 2.715 });
     usa.addCity('Portland', { population: 0.603 });
